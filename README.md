@@ -1,4 +1,4 @@
-# Explicit Representation of the Translation Space:Automatic Paraphrasing for Machine Translation Evaluation
+# Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation
 
 This is the github repository corresponding to the following article:
 
