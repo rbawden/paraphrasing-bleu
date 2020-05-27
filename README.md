@@ -30,8 +30,8 @@ Outputs and results (for WMT18/19 into-English test sets):
 Code:
 
 * Diverse paraphrasing using sentence codes:
-    - Treelstm sentence encoder, found here
-    - Modified beam search in Marian, found here
+    - Treelstm sentence encoder, found 
+    - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam)
     - Clustering
 * `scripts/`
    - list scripts here
