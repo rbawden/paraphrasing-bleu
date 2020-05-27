@@ -1,4 +1,4 @@
-# Explicit Representation of the Translation Space:Automatic Paraphrasing for Machine Translation Evaluation
+# Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation
 
 This is the github repository corresponding to the following article:
 
@@ -24,14 +24,14 @@ The content of this repository is available under TODO licence.
 Outputs and results (for WMT18/19 into-English test sets):
 
 * `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
-* `metrics-scores/newstest201{8,9}/` - BLEU and Meteor scores for baselines and multi-bleu metrics
+* `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
 * `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
 
 Code:
 
 * Diverse paraphrasing using sentence codes:
-    - Treelstm sentence encoder, found here
-    - Modified beam search in Marian, found here
+    - Treelstm sentence encoder, found 
+    - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam)
     - Clustering
 * `scripts/`
    - list scripts here
