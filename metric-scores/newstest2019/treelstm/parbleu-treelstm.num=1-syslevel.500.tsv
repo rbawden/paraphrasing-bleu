@@ -1,0 +1,16 @@
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	dfki-nmt.6478		43.94646
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	Facebook_FAIR.6750		46.06560
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	JHU.6809		44.04455
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	MLLP-UPV.6899		44.69567
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	MSRA.MADL.6910		47.25767
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	NEU.6801		45.16271
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	online-A.0		41.18689
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	online-B.0		49.29371
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	online-G.0		38.14248
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	online-X.0		32.62209
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	online-Y.0		44.01550
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	PROMT_NMT_DE-EN.6683		36.61906
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	RWTH_Aachen_System.6818		44.84159
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	TartuNLP-c.6502		40.28548
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	UCAM.6461		44.96415
+parbleu-treelstm-1-syslevel-subsample500	de-en	newstest2019	uedin.6749		39.87114

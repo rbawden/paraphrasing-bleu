@@ -1,0 +1,16 @@
+parbleu-human-5-syslevel	de-en	newstest2019	dfki-nmt.6478		46.51693
+parbleu-human-5-syslevel	de-en	newstest2019	Facebook_FAIR.6750		49.20161
+parbleu-human-5-syslevel	de-en	newstest2019	JHU.6809		47.76612
+parbleu-human-5-syslevel	de-en	newstest2019	MLLP-UPV.6899		47.51710
+parbleu-human-5-syslevel	de-en	newstest2019	MSRA.MADL.6910		50.22992
+parbleu-human-5-syslevel	de-en	newstest2019	NEU.6801		47.83356
+parbleu-human-5-syslevel	de-en	newstest2019	online-A.0		44.06116
+parbleu-human-5-syslevel	de-en	newstest2019	online-B.0		52.11382
+parbleu-human-5-syslevel	de-en	newstest2019	online-G.0		40.58267
+parbleu-human-5-syslevel	de-en	newstest2019	online-X.0		34.70775
+parbleu-human-5-syslevel	de-en	newstest2019	online-Y.0		46.37155
+parbleu-human-5-syslevel	de-en	newstest2019	PROMT_NMT_DE-EN.6683		39.45510
+parbleu-human-5-syslevel	de-en	newstest2019	RWTH_Aachen_System.6818		47.70207
+parbleu-human-5-syslevel	de-en	newstest2019	TartuNLP-c.6502		43.10894
+parbleu-human-5-syslevel	de-en	newstest2019	UCAM.6461		48.50600
+parbleu-human-5-syslevel	de-en	newstest2019	uedin.6749		42.64759
