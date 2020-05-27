@@ -18,3 +18,9 @@ Please cite the following article:
 }
 ```
 The content of this repository is available under TODO licence.
+
+## Contents of this repository
+
+* `paraphrases/newstest201{8,9}/` - paraphrased references for all into-English test sets (human and automatic methods)
+* `metrics-scores/newstest201{8,9}/` - containing bleu and meteor scores for baselines and multi-bleu metrics.
+
