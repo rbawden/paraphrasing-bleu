@@ -21,6 +21,8 @@ The content of this repository is available under TODO licence.
 
 ## Contents of this repository
 
-* `paraphrases/newstest201{8,9}/` - paraphrased references for all into-English test sets (human and automatic methods)
+Outputs and results (for WMT18/19 into-English test sets):
+
+* `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
 * `metrics-scores/newstest201{8,9}/` - containing bleu and meteor scores for baselines and multi-bleu metrics.
 
