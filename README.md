@@ -24,7 +24,7 @@ The content of this repository is available under TODO licence.
 Outputs and results (for WMT18/19 into-English test sets):
 
 * `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
-* `metrics-scores/newstest201{8,9}/` - BLEU and Meteor scores for baselines and multi-bleu metrics
+* `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
 * `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
 
 Code:
