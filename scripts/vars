@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+METEOR_JAR=/path/to/meteor-1.5.jar
