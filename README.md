@@ -66,8 +66,25 @@ bash scripts/produce-metric-scores-output-specific-{seg,sys}level.sh TESTSET MET
 E.g. Calculating BLEU scores using Laser-guided paraphrases at the system level for newstest2019:
 
 ```
-bash scripts/produce-metric-scores-output-specific-syslevel.sh newstest2019 laser scripts/sacreBLEU-syslevel.sh
+bash scripts/produce-metric-scores-output-specific-syslevel.sh newstest2019 laser scripts/sacreBLEU-syslevel.sh \
+    > metric-scores/newstest2019/sampled/parbleu-laser-constrained.syslevel.tsv
  ```
+ 
+#### For the 500 de-en subsample:
+
+Diverse paraphrases: 
+```
+bash scripts/produce-metric-scores-500-subsample-syslevel.sh EVAL_TOOL NAME PARAHPRASE_FOLDER NUM_PARAPHRASES
+
+    EVAL_TOOL: scripts/sacreBLEU-{seg,sys}level-truncate.sh or scripts/Meteor-{seg,sys}level-truncate.sh
+    NAME: metric name to be written into the output file
+    PARAPHRASE_FOLDER: folder in paraphrases/newstest2019 containing the paraphrased references
+    NUM_PARAPHRASES: number of additional, paraphrased references to use (up to 5)
+```
+
+Output-guided paraphrases:
+```
+```
 
 ### Calculate correlation of metric scores with human judgments:
 
