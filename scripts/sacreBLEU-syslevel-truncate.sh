@@ -2,8 +2,7 @@
 
 hyp="$1"
 maximum=$2
-ref="${3}"
-
+ref="$3"
 
 if [ $# -lt 2 ]; then
     echo "Wrong number of arguments specified (expecting 2)"
@@ -11,4 +10,5 @@ if [ $# -lt 2 ]; then
     exit
 fi
 
-head -n $maximum $hyp | sacrebleu -sl -b --width 5 -s exp $ref
+
+head -n $maximum $hyp | sacrebleu -b --width 5  $ref
