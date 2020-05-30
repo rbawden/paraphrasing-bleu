@@ -30,8 +30,9 @@ Calculate diversity:
 
 TODO
 
-### Calculate BLEU (or METEOR) scores for each diverse paraphrase-augmented metric:
+### Calculate BLEU (or METEOR) scores:
 
+#### For each diverse paraphrase-augmented metric:
 ```
 bash scripts/produce-system-scores-{seg,sys}level.sh TESTSET EVAL_TOOL NAME PARAHPRASE_FOLDER NUM_PARAPHRASES
 
@@ -51,7 +52,7 @@ bash scripts/produce-system-scores-syslevel.sh \
      > metric-scores/newstest2019/sampled/parbleu-sampled.num\=5-syslevel.tsv
 ```
 
-### Calculate BLEU (or METEOR) scores for each MT-specific paraphrase-augmented metric:
+#### For each MT-specific paraphrase-augmented metric:
 (i.e. making one paraphrased referencethat is specific to each MT output)
 
 ```
