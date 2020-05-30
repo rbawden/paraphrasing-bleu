@@ -1,24 +1,5 @@
 # Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation
 
-This is the github repository corresponding to the following article:
-
-Rachel Bawden, Biao Zhang, Lisa Yankovskaya, Andre Tättar and Matt Post. 2020. Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation. arXiv.
-
-## Citation and licence
-
-Please cite the following article:
-```
-@misc{bawden2020explicit,
-    title={Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation},
-    author={Rachel Bawden and Biao Zhang and Lisa Yankovskaya and Andre Tättar and Matt Post},
-    year={2020},
-    eprint={2004.14989},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-```
-The content of this repository is available under TODO licence.
-
 ## Requirements
 
 python3 and the following packages (installable using `pip install`): sacrebleu, numpy, scipy
@@ -49,7 +30,7 @@ Calculate diversity:
 
 TODO
 
-### Calculate BLEU (or METEOR) scores for each paraphrase-augmented metric:
+### Calculate BLEU (or METEOR) scores for each diverse paraphrase-augmented metric:
 
 ```
 bash scripts/produce-system-scores-{seg,sys}level.sh TESTSET EVAL_TOOL NAME PARAHPRASE_FOLDER NUM_PARAPHRASES
@@ -64,11 +45,28 @@ bash scripts/produce-system-scores-{seg,sys}level.sh TESTSET EVAL_TOOL NAME PARA
 E.g. Calculating BLEU scores for 5 sampled paraphrased references (out of a maximum of 20) in addition to the original one, for the newstest2019 test set at the system level:
 ```
 bash scripts/produce-system-scores-syslevel.sh \
-            newstest2019 \
-            scripts/sacreBLEU-syslevel.sh  \
-            sampled-5-syslevel paraphrases/newstest2019/sampled 5 \
+    newstest2019 \
+    scripts/sacreBLEU-syslevel.sh  \
+    sampled-5-syslevel paraphrases/newstest2019/sampled 5 \
      > metric-scores/newstest2019/sampled/parbleu-sampled.num\=5-syslevel.tsv
 ```
+
+### Calculate BLEU (or METEOR) scores for each MT-specific paraphrase-augmented metric:
+(i.e. making one paraphrased referencethat is specific to each MT output)
+
+```
+bash scripts/produce-metric-scores-output-specific-{seg,sys}level.sh TESTSET METHOD EVAL_TOOL
+       
+    TESTSET: newstest2018 or newstest2019
+    METHOD: laser or treelstm
+    EVAL_TOOL: scripts/sacreBLEU-{seg,sys}level.sh or scripts/Meteor-{seg,sys}level.sh
+```
+
+E.g. Calculating BLEU scores using Laser-guided paraphrases at the system level for newstest2019:
+
+```
+bash scripts/produce-metric-scores-output-specific-syslevel.sh newstest2019 laser scripts/sacreBLEU-syslevel.sh
+ ```
 
 ### Calculate correlation of metric scores with human judgments:
 
