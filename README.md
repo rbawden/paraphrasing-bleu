@@ -86,16 +86,16 @@ The model can be used to apply the clusters to new data: TODO
 
 ---
 
-#### Training the paraphrase models
+### Training the paraphrase models
 
 The models are too large to be stored in this repository, but training and paraphrase scripts are provided in `paraphrase-models/`. Training and validation data is created by pasting the relevant sentence codes (separated by a space) to the training and validation sets on the target side of the data only. 
 
 E.g. Training the laser model:
-
 ```
 cd paraphrase-models/laser
 bash train.sh "0 1 2 3"
 ```
+The models are trained with early stopping of 10 validations and the model to be used is the one with the best BLEU score on the validation set (see `validate.sh`).
 
 Producing the paraphrases:
 ```
@@ -106,6 +106,7 @@ bash produce_paraphrase_outputs.sh MODEL NUM_PARAS TESTSET GPUS
     TESTSET: newstest2018 or newstest2019
     GPUS: list of devices of the format "0 1 2 3"
 ```
+The paraphrases are output to `paraphrases/MODEL_TYPE/`
 
 Sockeye models:
 
