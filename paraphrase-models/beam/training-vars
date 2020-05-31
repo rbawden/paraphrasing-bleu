@@ -1,0 +1,29 @@
+#!/bin/sh
+# tool directories
+tooldir=/path/to/tools
+moses_scripts=$tooldir/mosesdecoder/scripts
+sentencepiece=$tooldir/sentence_piece
+
+# internal dir vars
+thisdir=$(dirname $0)
+projdir=$thisdir/../../
+maindir=$projdir/paraphrase-models/beam
+datadir=$projdir/train-dev-test-data/
+modeldir=$thisdir/model
+
+marian=$projdir/marian-dev
+
+src=src
+trg=trg
+
+# training data
+train_src=$datadir/train.100.just1.uniq.spm.$src
+train_trg=$datadir/train.100.just1.uniq.spm.$trg
+
+# valid sets
+dev_src=$datadir/dev.100.just1.uniq.spm.$src
+dev_trg=$datadir/dev.100.just1.uniq.spm.$trg
+ref=$datadir/dev.100.uniq.$trg
+
+# vocabulary files (shared vocab)
+vocab_joint=$datadir/vocab-joint.$src-$trg.with_codes.yaml

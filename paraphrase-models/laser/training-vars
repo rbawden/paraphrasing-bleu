@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# internal dir vars
+thisdir=$(dirname $0)
+projdir=$thisdir/../../
+maindir=$projdir/paraphrase-models/laser
+datadir=$projdir/train-dev-test-data
+modeldir=$thisdir/model
+
+# tool directories
+tooldir=/path/to/tools
+moses_scripts=$tooldir/mosesdecoder/scripts
+marian=$projdir/marian-dev
+
+src=src
+trg=trg
+
+# training data
+train_src=$datadir/train.100.just1.uniq.spm.$src
+train_trg=$datadir/data_with_clusters/train.100.just1.uniq.spm.laser-clusters.$trg
+
+# valid sets
+dev_src=$datadir/dev.100.just1.uniq.spm.$src
+dev_trg=$datadir/data_with_clusters/dev.100.just1.uniq.spm.laser-clusters.$trg
+ref=$datadir/dev.100.uniq.$trg
+
+# vocabulary files (shared vocab)
+vocab_joint=$datadir/vocab-joint.$src-$trg.with_codes.yaml
