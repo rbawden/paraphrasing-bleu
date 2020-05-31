@@ -17,20 +17,21 @@
 Outputs and results (for WMT18/19 into-English test sets):
 
 * `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
+* `paraphrases-parses/newstest201{8,9}/` - paraphrased references (human and automatic methods)
 * `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
 * `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
 
-Code:
+#### Related code
 
 * Diverse paraphrasing using sentence codes:
-    - Treelstm sentence encoder, found 
+    - Laser embeddings: https://github.com/facebookresearch/LASER
+    - Parsing of inputs, using TODO
+    - Treelstm sentence encoder, TODO
     - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam)
-    - Clustering
-* `scripts/`
-   - list scripts here
-   - diversity metrics
+    - Clustering TODO
+* Constrained decoding with n-grams:
+    - Sockeye MT toolkit: https://github.com/awslabs/sockeye
 
-Scripts to reproduce results:
 
 #### Calculate diversity of a set of paraphrases
 
@@ -50,7 +51,7 @@ E.g. Calculating syntactic diversity of the top 2 laser 2019 paraphrases:
 python3 scripts/calculate_diversity.py paraphrases-parses/newstest2019/laser syntax -n 2
 ```
 
-N.B. The syntax metric required TreeKernel to be compiled
+N.B. The syntax metric requires TreeKernel to be compiled
 
 ### Calculate BLEU (or METEOR) scores:
 
