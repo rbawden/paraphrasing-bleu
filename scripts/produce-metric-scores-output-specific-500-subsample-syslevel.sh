@@ -44,8 +44,7 @@ for lpnodash in deen; do
 	para=`echo $paradir/$testset.$systemname.$lp.*$model_type*`
 	randnum=$RANDOM
 	cat $para | head -n 500 > $paradir/$randnum
-
-	score=`$eval_tool $hyp "500" "$ref $paradir/$randnum" $n`
+	score=`$eval_tool $hyp "500" "$ref $paradir/$randnum" 1`
 	echo -ne "$name\t$lp\t$testset\t$systemname\t$score\n"
 	rm $paradir/$randnum
     done

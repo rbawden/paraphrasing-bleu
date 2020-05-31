@@ -1,0 +1,16 @@
+Meteor-syslevel-subsample500	de-en	newstest2019	dfki-nmt.6478		0.31943250910204546
+Meteor-syslevel-subsample500	de-en	newstest2019	Facebook_FAIR.6750		0.33231023506836843
+Meteor-syslevel-subsample500	de-en	newstest2019	JHU.6809		0.32458455607907133
+Meteor-syslevel-subsample500	de-en	newstest2019	MLLP-UPV.6899		0.3230743275825049
+Meteor-syslevel-subsample500	de-en	newstest2019	MSRA.MADL.6910		0.3403252866596878
+Meteor-syslevel-subsample500	de-en	newstest2019	NEU.6801		0.33058749881867744
+Meteor-syslevel-subsample500	de-en	newstest2019	online-A.0		0.30933732309971024
+Meteor-syslevel-subsample500	de-en	newstest2019	online-B.0		0.3489108509809708
+Meteor-syslevel-subsample500	de-en	newstest2019	online-G.0		0.2933330904298531
+Meteor-syslevel-subsample500	de-en	newstest2019	online-X.0		0.2588226406469069
+Meteor-syslevel-subsample500	de-en	newstest2019	online-Y.0		0.3240160472056019
+Meteor-syslevel-subsample500	de-en	newstest2019	PROMT_NMT_DE-EN.6683		0.2836721304429826
+Meteor-syslevel-subsample500	de-en	newstest2019	RWTH_Aachen_System.6818		0.3262344288875873
+Meteor-syslevel-subsample500	de-en	newstest2019	TartuNLP-c.6502		0.2987538121650542
+Meteor-syslevel-subsample500	de-en	newstest2019	UCAM.6461		0.32740001418679676
+Meteor-syslevel-subsample500	de-en	newstest2019	uedin.6749		0.30048407350248735
