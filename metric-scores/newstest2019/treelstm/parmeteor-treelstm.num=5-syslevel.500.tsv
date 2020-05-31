@@ -1,0 +1,16 @@
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	dfki-nmt.6478		0.3426634683775674
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	Facebook_FAIR.6750		0.35920421720866874
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	JHU.6809		0.3490830022293309
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	MLLP-UPV.6899		0.34879165848165433
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	MSRA.MADL.6910		0.3622130973355106
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	NEU.6801		0.3524062572136252
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	online-A.0		0.3305054416688986
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	online-B.0		0.36627544934755785
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	online-G.0		0.31563602827972187
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	online-X.0		0.28018906029518637
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	online-Y.0		0.34567044592655427
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	PROMT_NMT_DE-EN.6683		0.3093488393309364
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	RWTH_Aachen_System.6818		0.35067624510262335
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	TartuNLP-c.6502		0.32654983122860437
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	UCAM.6461		0.3551377270312863
+parmeteor-treelstm-5-syslevel-subsample500	de-en	newstest2019	uedin.6749		0.3244200754151128
