@@ -33,13 +33,16 @@ Args:
 Returns a dictionary containing for each language pair a list of tuples 
 (as many as there are sentences), each containing n paraphrases
 '''
-def read_files(para_folder, reference_folder=None, langpair=None, max_n=-1, secondary_para_folder=None):
+def read_files(para_folder, score_type=None, reference_folder=None, langpair=None, max_n=-1, secondary_para_folder=None):
     paras = {}
 
     if reference_folder is not None:
         os.sys.stderr.write("Reading references...")
         for reffile in os.listdir(reference_folder):
-            refmatch = re.match('.+?\-(....)\-ref\.en(\.parse)?', reffile)
+            if score_type == 'syntax':
+                refmatch = re.match('.+?\-(....)\-ref\.en\.parse', reffile)
+            else:
+                refmatch = re.match('.+?\-(....)\-ref\.en', reffile)
             if not refmatch:
                 continue
             lang = refmatch.group(1)
@@ -220,5 +223,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
 
-    paras = read_files(args.paraphrase_folder, args.reference_folder, args.langpair, args.n, args.secondary_paraphrase_folder)
+    paras = read_files(args.paraphrase_folder, args.metric, args.reference_folder, args.langpair, args.n, args.secondary_paraphrase_folder)
     diversity(paras, args.metric, lowercase=True)
