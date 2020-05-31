@@ -185,17 +185,13 @@ python3 scripts/metric_correlation-syslevel.py \
 ```
 
 
-Re-create raw results tables:
+Re-create results tables:
+(Outputs found in `latex-correlation-results/`)
 ```
 bash scripts/metric_correlation-create-raw-latex-table.py {bleu,meteor} {seg,sys}level newstest201{89}
-```
-(Output found in `metric-correlation-tables/`)
 
-Re-create summary results tables:
-```
 bash scripts/metric_correlation-create-summary-latex-table.py {bleu,meteor} newstest201{89}
 ```
-(Output found in `metric-correlation-tables/`)
 
 
 
