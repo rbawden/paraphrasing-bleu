@@ -74,7 +74,7 @@ bash scripts/produce-metric-scores-output-specific-syslevel.sh newstest2019 lase
 
 Diverse paraphrases: 
 ```
-bash scripts/produce-metric-scores-500-subsample-syslevel.sh EVAL_TOOL NAME PARAHPRASE_FOLDER NUM_PARAPHRASES
+bash scripts/produce-metric-scores-500-subsample-{seg,sys}level.sh EVAL_TOOL NAME PARAHPRASE_FOLDER NUM_PARAPHRASES
 
     EVAL_TOOL: scripts/sacreBLEU-{seg,sys}level-truncate.sh or scripts/Meteor-{seg,sys}level-truncate.sh
     NAME: metric name to be written into the output file
@@ -84,6 +84,11 @@ bash scripts/produce-metric-scores-500-subsample-syslevel.sh EVAL_TOOL NAME PARA
 
 Output-guided paraphrases:
 ```
+bash scripts/produce-metric-scores-output-specific-500-subsample-{seg,sys}level.sh EVAL_TOOL NAME MODEL_TYPE
+
+    EVAL_TOOL: scripts/sacreBLEU-seglevel-truncate.sh 
+    NAME: metric name to be written into the output file 
+    MODEL_TYPE: 'laser' or 'treelstm'
 ```
 
 ### Calculate correlation of metric scores with human judgments:
