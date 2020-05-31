@@ -1,0 +1,31 @@
+Done. Read 20 paraphrases for lang deen-newstest2019
+Done. Read 20 paraphrases for lang ruen-newstest2019
+Done. Read 20 paraphrases for lang zhen-newstest2019
+Done. Read 20 paraphrases for lang kken-newstest2019
+Done. Read 20 paraphrases for lang lten-newstest2019
+Done. Read 20 paraphrases for lang fien-newstest2019
+Done. Read 20 paraphrases for lang guen-newstest2019
+Doing deen-newstest2019...
+Done.deen-newstest2019 = 0.39297428633569015
+Doing fien-newstest2019...
+Done.fien-newstest2019 = 0.3911401618082369
+Doing guen-newstest2019...
+Done.guen-newstest2019 = 0.40583608690271483
+Doing kken-newstest2019...
+Done.kken-newstest2019 = 0.37022566228947346
+Doing lten-newstest2019...
+Done.lten-newstest2019 = 0.3550088455167974
+Doing ruen-newstest2019...
+Done.ruen-newstest2019 = 0.3796656803612516
+Doing zhen-newstest2019...
+Done.zhen-newstest2019 = 0.33130297351967264
+[2000, 2000, 2000, 1000, 1000, 1996, 1016]
+DP syntax averaged over all languages = 0.3746972044589447
+Per language direction = 
+	deen-newstest2019 = 0.39297428633569015	Calculated on 2000 sentences
+	ruen-newstest2019 = 0.3796656803612516	Calculated on 2000 sentences
+	zhen-newstest2019 = 0.33130297351967264	Calculated on 2000 sentences
+	kken-newstest2019 = 0.37022566228947346	Calculated on 1000 sentences
+	lten-newstest2019 = 0.3550088455167974	Calculated on 1000 sentences
+	fien-newstest2019 = 0.3911401618082369	Calculated on 1996 sentences
+	guen-newstest2019 = 0.40583608690271483	Calculated on 1016 sentences

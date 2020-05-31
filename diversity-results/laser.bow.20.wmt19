@@ -1,0 +1,31 @@
+Done. Read 20 paraphrases for lang fien-newstest2019
+Done. Read 20 paraphrases for lang deen-newstest2019
+Done. Read 20 paraphrases for lang lten-newstest2019
+Done. Read 20 paraphrases for lang ruen-newstest2019
+Done. Read 20 paraphrases for lang guen-newstest2019
+Done. Read 20 paraphrases for lang zhen-newstest2019
+Done. Read 20 paraphrases for lang kken-newstest2019
+Doing deen-newstest2019...
+Done.deen-newstest2019 = 0.3053165050462285
+Doing fien-newstest2019...
+Done.fien-newstest2019 = 0.30443557269115834
+Doing guen-newstest2019...
+Done.guen-newstest2019 = 0.29527732222927966
+Doing kken-newstest2019...
+Done.kken-newstest2019 = 0.3145188682762665
+Doing lten-newstest2019...
+Done.lten-newstest2019 = 0.3049807629868306
+Doing ruen-newstest2019...
+Done.ruen-newstest2019 = 0.3131968385856712
+Doing zhen-newstest2019...
+Done.zhen-newstest2019 = 0.3321616133577749
+[1996, 2000, 1000, 2000, 1016, 2000, 1000]
+DP bow averaged over all languages = 0.31134259968388545
+Per language direction = 
+	fien-newstest2019 = 0.30443557269115834	Calculated on 1996 sentences
+	deen-newstest2019 = 0.3053165050462285	Calculated on 2000 sentences
+	lten-newstest2019 = 0.3049807629868306	Calculated on 1000 sentences
+	ruen-newstest2019 = 0.3131968385856712	Calculated on 2000 sentences
+	guen-newstest2019 = 0.29527732222927966	Calculated on 1016 sentences
+	zhen-newstest2019 = 0.3321616133577749	Calculated on 2000 sentences
+	kken-newstest2019 = 0.3145188682762665	Calculated on 1000 sentences
