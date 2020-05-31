@@ -14,9 +14,8 @@
 * Diverse paraphrasing using sentence codes:
     - Laser embeddings: https://github.com/facebookresearch/LASER
     - Parsing of inputs, using the Berkeley Parser
-    - Treelstm sentence encoder, TODO
-    - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam)
-    - Clustering TODO
+    - Treelstm sentence encoder in `treelstm-autoencoder/`
+    - Modified beam search in Marian, found in this [modified version](ANON) (link anonymised for submission)
 * Constrained decoding with n-grams:
     - Sockeye MT toolkit: https://github.com/awslabs/sockeye
 
@@ -30,6 +29,7 @@ Outputs and results (for WMT18/19 into-English test sets):
 * `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
 * `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
 
+TODO
 
 ## Instructions for reproducing results: 
 
@@ -66,14 +66,14 @@ The resulting cluster codes are found in `train-dev-test-data.tgz` in the folder
 
 TODO
 
-#### Syntactic codes (Using a Treelstm encoder)
+#### Syntactic codes (Using a Treelstm autoencoder)
 
-1. Parse the data using the Berkeley parser
+1. Parse the training data using the Berkeley parser
 2. Prune the trees to depth 4 and remove leaves
 ```
 cat PARSE_TREE_FILE | python scripts/prune_trees.py --depth DEPTH [--remove_leaves]
 ```
-3.
+3. Encode each parse tree using the treelstm-autoencoder. More detailed instructions of this step are given in `treelstm-autoencoder/README`
 
 #### Clustering the representations
 
