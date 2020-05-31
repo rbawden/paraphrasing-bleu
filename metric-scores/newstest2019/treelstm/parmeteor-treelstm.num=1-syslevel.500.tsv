@@ -1,0 +1,32 @@
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.dfki-nmt.6478.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	dfki-nmt.6478		0.3318089983063935
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.Facebook_FAIR.6750.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	Facebook_FAIR.6750		0.3470921727981379
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.JHU.6809.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	JHU.6809		0.33642495518906956
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.MLLP-UPV.6899.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	MLLP-UPV.6899		0.3358928965505746
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.MSRA.MADL.6910.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	MSRA.MADL.6910		0.3516017204109182
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.NEU.6801.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	NEU.6801		0.3413949272037128
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-A.0.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	online-A.0		0.31991407624995916
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-B.0.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	online-B.0		0.3562738098118055
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-G.0.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	online-G.0		0.30480083195810603
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-X.0.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	online-X.0		0.26938546362711163
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-Y.0.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	online-Y.0		0.33571993900462027
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.PROMT_NMT_DE-EN.6683.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	PROMT_NMT_DE-EN.6683		0.29722432499917995
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.RWTH_Aachen_System.6818.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	RWTH_Aachen_System.6818		0.3387867071281929
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.TartuNLP-c.6502.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	TartuNLP-c.6502		0.3136470561964572
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.UCAM.6461.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	UCAM.6461		0.3410912431711849
+scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.uedin.6749.de-en "500" "paraphrases/newstest2019/treelstm/deen-1.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 1
+parmeteor-treelstm-1-syslevel-500subsample	de-en	newstest2019	uedin.6749		0.3111700927354546
