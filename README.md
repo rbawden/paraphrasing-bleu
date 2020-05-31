@@ -2,8 +2,10 @@
 
 ## Requirements and related code
 
-* python3 and the following packages (installable using `pip install`): sacrebleu==1.4.10, numpy, scipy, apted, nltk
+* python3 and the following packages (installable using `pip install`): sacrebleu==1.4.10, numpy, scipy, apted, nltk, sklearn
      - `pip3 install -r requirements.txt`
+* Sentencepiece (https://github.com/google/sentencepiece)
+* Moses scripts (https://github.com/moses-smt/mosesdecoder)
 * TreeKernel (from https://github.com/JDonner/TreeKernel, reimplementation of Alessandro Moschitti's 2006 paper, "Making Tree Kernels Practical for Natural Language Learning")
      - With modifications (found in `tools/`)
      ```
@@ -73,15 +75,41 @@ cat PARSE_TREE_FILE | python scripts/prune_trees.py --depth DEPTH [--remove_leav
 
 #### Clustering the representations
 
-TODO
+Cluster the vectorial representation using the following script:
+```
+python scripts/cluster.py --n_clusters 256 --algorithm kmeans \
+            --model_file MODEL_FILE --in_file IN_FILE --out_file [--predict] [--seed SEED]
+```
 
+The input should be in the following format: TODO
+The model can be used to apply the clusters to new data: TODO
 
 ---
 
 #### Training the paraphrase models
 
-TODO
+The models are too large to be stored in this repository, but training and paraphrase scripts are provided in `paraphrase-models/`. Training and validation data is created by pasting the relevant sentence codes (separated by a space) to the training and validation sets on the target side of the data only. 
 
+E.g. Training the laser model:
+
+```
+cd paraphrase-models/laser
+bash train.sh "0 1 2 3"
+```
+
+Producing the paraphrases:
+```
+bash produce_paraphrase_outputs.sh MODEL NUM_PARAS TESTSET GPUS
+
+    MODEL: path to model (E.g. model/model.npz.best_translation.npz)
+    NUM_PARAS: 0-20
+    TESTSET: newstest2018 or newstest2019
+    GPUS: list of devices of the format "0 1 2 3"
+```
+
+Sockeye models:
+
+TODO? (some light instructions here?)
 
 ---
 
