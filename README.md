@@ -11,6 +11,17 @@
      cd tree-parser; make; cd ..
      cd tree-kernel; make
      ```
+     
+## Related code
+
+* Diverse paraphrasing using sentence codes:
+    - Laser embeddings: https://github.com/facebookresearch/LASER
+    - Parsing of inputs, using TODO
+    - Treelstm sentence encoder, TODO
+    - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam)
+    - Clustering TODO
+* Constrained decoding with n-grams:
+    - Sockeye MT toolkit: https://github.com/awslabs/sockeye
 
 ## Contents of this repository
 
@@ -22,19 +33,10 @@ Outputs and results (for WMT18/19 into-English test sets):
 * `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
 * `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
 
-#### Related code
 
-* Diverse paraphrasing using sentence codes:
-    - Laser embeddings: https://github.com/facebookresearch/LASER
-    - Parsing of inputs, using TODO
-    - Treelstm sentence encoder, TODO
-    - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam)
-    - Clustering TODO
-* Constrained decoding with n-grams:
-    - Sockeye MT toolkit: https://github.com/awslabs/sockeye
+## Instructions for reproducing results: 
 
-
-#### Calculate diversity of a set of paraphrases
+### Calculate diversity of a set of paraphrases
 
 There are 2 diversity metrics (lexical (BOW) adn syntactic (syntax), calculated using the following script:
 
