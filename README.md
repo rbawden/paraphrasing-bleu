@@ -33,6 +33,24 @@ Outputs and results (for WMT18/19 into-English test sets):
 
 ## Instructions for reproducing results: 
 
+### Data and pre-processing
+
+Our paraphrase data comes from [Parabank2](http://decomp.io/projects/parabank2/) (Hu et al., 2019)
+We take one paraphrase for each sentences, resulting in approximately 20M sentences associated with a paraphrase.
+
+Pre-processing applied:
+
+* Deduplication
+* Remove sentences longer than 100 raw tokens (no tokenisation)
+* Segment into subwords using [SentencePiece](https://github.com/google/sentencepiece) with a unigram model of size 16k
+* Randomly shuffled
+* Data splits: 3k for dev and test each, the rest for training
+
+Pre-processing applied to newstest data:
+
+* Normalisation of punctuation using the [Moses](https://github.com/moses-smt/mosesdecoder) script (to be inline with the normalisation of apostrophes in Parabank)
+* Subword segmentation as above
+
 ### Calculate diversity of a set of paraphrases
 
 There are 2 diversity metrics (lexical (BOW) adn syntactic (syntax), calculated using the following script:
@@ -132,10 +150,19 @@ python3 scripts/metric_correlation-syslevel.py \
             metric-scores/newstest2019/sampled/parbleu-sampled.num\=5-syslevel.tsv
 ```
 
-Re-create raw results table:
 
+Re-create raw results tables:
 ```
-bash scripts/metric_correlation-create-latex-table.sh newstest201{89} {seg,sys} {bleu,meteor}
+bash scripts/metric_correlation-create-raw-latex-table.py {bleu,meteor} {seg,sys}level newstest201{89}
 ```
+(Output found in `metric-correlation-tables/`)
+
+Re-create summary results tables:
+```
+bash scripts/metric_correlation-create-summary-latex-table.py {bleu,meteor} newstest201{89}
+```
+(Output found in `metric-correlation-tables/`)
+
+
 
 
