@@ -2,7 +2,7 @@
 
 ## Requirements and related code
 
-* python3 and the following packages (installable using `pip install`): sacrebleu==1.4.10, numpy, scipy
+* python3 and the following packages (installable using `pip install`): sacrebleu==1.4.10, numpy, scipy, apted, nltk
      - `pip3 install -r requirements.txt`
 * TreeKernel (from https://github.com/JDonner/TreeKernel, reimplementation of Alessandro Moschitti's 2006 paper, "Making Tree Kernels Practical for Natural Language Learning")
      - With modifications (found in `tools/`)
@@ -13,7 +13,7 @@
      ```
 * Diverse paraphrasing using sentence codes:
     - Laser embeddings: https://github.com/facebookresearch/LASER
-    - Parsing of inputs, using TODO
+    - Parsing of inputs, using the Berkeley Parser
     - Treelstm sentence encoder, TODO
     - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam)
     - Clustering TODO
@@ -50,6 +50,40 @@ Pre-processing applied to newstest data:
 
 * Normalisation of punctuation using the [Moses](https://github.com/moses-smt/mosesdecoder) script (to be inline with the normalisation of apostrophes in Parabank)
 * Subword segmentation as above
+
+The pre-processed data (with data splits) can be found in `train-dev-test-data.tgz`
+
+### Producing the sentence codes
+
+Producing cluster codes for each sentence requires:
+
+1. Encoding each sentence using either the lexical or syntactic method
+2. Clustering the resulting representation into 256 codes and assigning each a number
+
+The resulting cluster codes are found in `train-dev-test-data.tgz` in the folder `sentence-codes`
+
+#### Lexical codes (using Laser)
+
+TODO
+
+#### Syntactic codes (Using a Treelstm encoder)
+
+1. Parse the data using the Berkeley parser
+2. Prune the trees to depth 4 and remove leaves
+```
+cat PARSE_TREE_FILE | python scripts/prune_trees.py --depth DEPTH [--remove_leaves]
+```
+3.
+
+#### Clustering the representations
+
+TODO
+
+
+#### Training the paraphrase models
+
+TODO
+
 
 ### Calculate diversity of a set of paraphrases
 
