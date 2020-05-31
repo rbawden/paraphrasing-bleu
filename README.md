@@ -1,6 +1,6 @@
 # Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation
 
-## Requirements
+## Requirements and related code
 
 * python3 and the following packages (installable using `pip install`): sacrebleu==1.4.10, numpy, scipy
      - `pip3 install -r requirements.txt`
@@ -11,18 +11,6 @@
      cd tree-parser; make; cd ..
      cd tree-kernel; make
      ```
-
-## Contents of this repository
-
-Outputs and results (for WMT18/19 into-English test sets):
-
-* `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
-* `paraphrases-parses/newstest201{8,9}/` - paraphrased references (human and automatic methods)
-* `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
-* `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
-
-#### Related code
-
 * Diverse paraphrasing using sentence codes:
     - Laser embeddings: https://github.com/facebookresearch/LASER
     - Parsing of inputs, using TODO
@@ -32,8 +20,20 @@ Outputs and results (for WMT18/19 into-English test sets):
 * Constrained decoding with n-grams:
     - Sockeye MT toolkit: https://github.com/awslabs/sockeye
 
+## Contents of this repository
 
-#### Calculate diversity of a set of paraphrases
+Outputs and results (for WMT18/19 into-English test sets):
+
+* `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
+* `paraphrases-parses/newstest201{8,9}/` - paraphrased references (human and automatic methods)
+* `diversity-results/` - raw diversity scores for WMT19
+* `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
+* `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
+
+
+## Instructions for reproducing results: 
+
+### Calculate diversity of a set of paraphrases
 
 There are 2 diversity metrics (lexical (BOW) adn syntactic (syntax), calculated using the following script:
 
