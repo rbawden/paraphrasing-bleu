@@ -1,6 +1,6 @@
 # Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation
 
-## Requirements
+## Requirements and related code
 
 * python3 and the following packages (installable using `pip install`): sacrebleu==1.4.10, numpy, scipy
      - `pip3 install -r requirements.txt`
@@ -11,9 +11,6 @@
      cd tree-parser; make; cd ..
      cd tree-kernel; make
      ```
-     
-## Related code
-
 * Diverse paraphrasing using sentence codes:
     - Laser embeddings: https://github.com/facebookresearch/LASER
     - Parsing of inputs, using TODO
