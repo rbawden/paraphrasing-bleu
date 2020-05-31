@@ -2,9 +2,15 @@
 
 ## Requirements
 
-python3 and the following packages (installable using `pip install`): sacrebleu, numpy, scipy
-
-`pip3 install -r requirements.txt`
+* python3 and the following packages (installable using `pip install`): sacrebleu==1.4.10, numpy, scipy
+     - `pip3 install -r requirements.txt`
+* TreeKernel (from https://github.com/JDonner/TreeKernel, reimplementation of Alessandro Moschitti's 2006 paper, "Making Tree Kernels Practical for Natural Language Learning")
+     - With modifications (found in `tools/`)
+     ```
+     cd tools/TreeKernel/
+     cd tree-parser; make; cd ..
+     cd tree-kernel; make
+     ```
 
 ## Contents of this repository
 
@@ -26,9 +32,25 @@ Code:
 
 Scripts to reproduce results:
 
-Calculate diversity:
+#### Calculate diversity of a set of paraphrases
 
-TODO
+There are 2 diversity metrics (lexical (BOW) adn syntactic (syntax), calculated using the following script:
+
+```
+python scripts/calculate_diversity.py PARA_FOLDER TYPE -n NUM
+
+    PARA_FOLDER: folder containing parses of paraphrased reference (e.g. paraphrases-parses/newstest2019/laser)
+    TYPE: syntax or bow
+    [-n NUM]: number of paraphrased references to include in the set (2-20)
+```
+
+E.g. Calculating syntactic diversity of the top 2 laser 2019 paraphrases:
+
+```
+python3 scripts/calculate_diversity.py paraphrases-parses/newstest2019/laser syntax -n 2
+```
+
+N.B. The syntax metric required TreeKernel to be compiled
 
 ### Calculate BLEU (or METEOR) scores:
 
