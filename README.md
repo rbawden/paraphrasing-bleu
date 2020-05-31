@@ -40,23 +40,19 @@ We take one paraphrase for each sentences, resulting in approximately 20M senten
 
 Pre-processing applied:
 
-* Deduplication
-* Remove sentences longer than 100 raw tokens (no tokenisation)
-* Segment into subwords using [SentencePiece](https://github.com/google/sentencepiece) with a unigram model of size 16k
-* Randomly shuffled
-* Data splits: 3k for dev and test each, the rest for training
+* Deduplication, remove sentences longer than 100 raw tokens (no tokenisation), segment into subwords using [SentencePiece](https://github.com/google/sentencepiece) with a unigram model of size 16k.
+* Randomly shuffle and split into train/dev/test: 3k for dev and test each, the rest for training
 
 Pre-processing applied to newstest data:
 
-* Normalisation of punctuation using the [Moses](https://github.com/moses-smt/mosesdecoder) script (to be inline with the normalisation of apostrophes in Parabank)
-* Subword segmentation as above
+* Normalisation of punctuation using the [Moses](https://github.com/moses-smt/mosesdecoder) script (to be inline with the normalisation of apostrophes in Parabank) and subword segmentation as above
 
-The pre-processed data (with data splits) can be found in `train-dev-test-data.tgz`
+
+---
 
 ### Producing the sentence codes
 
 Producing cluster codes for each sentence requires:
-
 1. Encoding each sentence using either the lexical or syntactic method
 2. Clustering the resulting representation into 256 codes and assigning each a number
 
@@ -80,10 +76,14 @@ cat PARSE_TREE_FILE | python scripts/prune_trees.py --depth DEPTH [--remove_leav
 TODO
 
 
+---
+
 #### Training the paraphrase models
 
 TODO
 
+
+---
 
 ### Calculate diversity of a set of paraphrases
 
@@ -104,6 +104,8 @@ python3 scripts/calculate_diversity.py paraphrases-parses/newstest2019/laser syn
 ```
 
 N.B. The syntax metric requires TreeKernel to be compiled
+
+---
 
 ### Calculate BLEU (or METEOR) scores:
 
@@ -165,6 +167,8 @@ bash scripts/produce-metric-scores-output-specific-500-subsample-{seg,sys}level.
     NAME: metric name to be written into the output file 
     MODEL_TYPE: 'laser' or 'treelstm'
 ```
+
+---
 
 ### Calculate correlation of metric scores with human judgments:
 
