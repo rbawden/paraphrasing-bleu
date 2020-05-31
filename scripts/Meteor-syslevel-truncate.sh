@@ -6,8 +6,10 @@ maximum="$2" # maximum number of lines to look at
 ref="$3"     # the list of reference files (including additional paraphrased references)
 n=$4         # the number of additional paraphrased references
 
+
+
 if [ $# -ne 4 ]; then
-    echo "Wrong number of arguments specified (expecting 2)"
+    echo "Wrong number of arguments specified (expecting 4)"
     echo "Usage: $0 HYPOTHESIS MAXIMUM REF1 [REF2 REF3...REFN] NUM_EXTRA_REFS"
     exit
 fi

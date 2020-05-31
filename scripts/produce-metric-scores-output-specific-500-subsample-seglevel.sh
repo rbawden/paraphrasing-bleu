@@ -46,7 +46,7 @@ for lpnodash in deen; do
 	randnum=$RANDOM
 	cat $para | head -n 500 > $paradir/$randnum
 
-	scores=`$eval_tool $hyp "500" "$ref $paradir/$randnum" $n`
+	scores=`$eval_tool $hyp "500" "$ref $paradir/$randnum" 1`
 
 	i=1
 	for score in $scores; do

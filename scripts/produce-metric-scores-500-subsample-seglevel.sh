@@ -18,6 +18,10 @@ ferences are used."
     exit
 fi
 
+if [ -z $n ]; then
+    n=0;
+fi
+
 # Specify folder containing all system inputs
 thisdir=`dirname $0`
 refdir="$thisdir/../original-references/" # reference files store in here
