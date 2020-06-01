@@ -66,7 +66,7 @@ The resulting cluster codes are found in `train-dev-test-data.tgz` in the folder
 
 #### Lexical codes (using Laser)
 
-1. Get LASER embeddings for data file like (train.en)
+1. Get LASER embeddings for data file like (train.en). Before using, set environment variable DATA, where your data is located. Then run the script. More info in the script. Also have train/valid/test data separated before extracting laser embeddings. NB! These can take a lot of hard drive space. 
 ```
 bash scripts/extract_laser_embeds.sh train.en
 ```

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #this script extract laser embeddings (see more information: https://github.com/facebookresearch/LASER/tree/master/tasks/embed)
+
 #usage: bash extract_laser_embeds.sh name_of_file (for example bash extract_laser_embeds.sh test.en)
 #please add paths to the data and LASER
 
@@ -17,4 +18,4 @@ file_name_wo_lang=${file_name:: -3}
 
 
 #get LASER embeddings
-bash ${LASER}/tasks/embed/embed.sh ${DATA}/${file_name} $lang ${DATA}/${file_name_wo_lang}.emb.raw.${lang}.laser
+bash ${LASER}/tasks/embed/embed.sh ${DATA}/${file_name} $lang ${DATA}/${file_name_wo_lang}.emb.${lang}.laser
