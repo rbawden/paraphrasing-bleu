@@ -25,12 +25,13 @@
 
 Outputs and results (for WMT18/19 into-English test sets):
 
-* `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
-* `paraphrases-parses/newstest201{8,9}/` - paraphrased references (human and automatic methods)
+* `paraphrases/newstest2019/` - paraphrased references (human and automatic methods). N.B. these are included as part of the Data supplementary material due to size limitations
 * `diversity-results/` - raw diversity scores for WMT19
-* `metric-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
-* `metrics-task/` - gold (human) quality assessment files for WMT18 and WMT19
-* `latex-correlation-results/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
+* `metric-scores/newstest2019/` - BLEU scores for baselines and multi-BLEU metrics using automatic paraphrases
+* `mt_submissions/` - the MT submissions to be scored
+* `metrics-task/` - gold (human) quality assessment files
+* `latex-correlation-results/newstest201{8,9}/` - raw and relative metric correlations for all methods tested
+* `train-dev-test-data` - processing model, Marian vocabulary and README detailing how to reproduce the paraphrase data. We cannot include the original or processed data in this submission due to size limitatons, but it can be found at this anonymous link: https://figshare.com/s/d495cd189949d0db9465
 
 Code and scripts:
 
