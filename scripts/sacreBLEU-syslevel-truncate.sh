@@ -10,5 +10,4 @@ if [ $# -lt 2 ]; then
     exit
 fi
 
-
 head -n $maximum $hyp | sacrebleu -b --width 5  $ref

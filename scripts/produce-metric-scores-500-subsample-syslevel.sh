@@ -57,7 +57,7 @@ for lpnodash in deen; do
     for hyp in $hypdir/$testset*$lp; do
 	systemname=`echo $hyp | perl -pe "s/^.+?\/\$testset\.(.+?\.\d+)\.\$lp$/\1/"`
 	score=`$eval_tool $hyp "$num_lines" "$ref" $n`
-	echo -ne "$metricname\t$lp\t$testset\t$systemname\t\t$score\n"
+	echo -ne "$metricname\t$lp\t$testset\t$systemname\t$score\n"
     done
 done
 
