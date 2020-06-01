@@ -1,96 +1,16 @@
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.dfki-nmt.6478.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	dfki-nmt.6478		0.33341808911812393
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.Facebook_FAIR.6750.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	Facebook_FAIR.6750		0.3498027904871933
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.JHU.6809.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	JHU.6809		0.3391507666076146
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.MLLP-UPV.6899.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	MLLP-UPV.6899		0.3377368458152053
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.MSRA.MADL.6910.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	MSRA.MADL.6910		0.35518595003418246
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.NEU.6801.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	NEU.6801		0.34391473851693005
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-A.0.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	online-A.0		0.3244387635132377
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-B.0.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	online-B.0		0.36203591525455026
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-G.0.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	online-G.0		0.3074277421576178
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-X.0.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	online-X.0		0.2712198856449759
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.online-Y.0.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	online-Y.0		0.3359180818315037
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.PROMT_NMT_DE-EN.6683.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	PROMT_NMT_DE-EN.6683		0.29656014993145136
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.RWTH_Aachen_System.6818.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	RWTH_Aachen_System.6818		0.34127933404349114
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.TartuNLP-c.6502.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	TartuNLP-c.6502		0.3127541106194708
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.UCAM.6461.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	UCAM.6461		0.3445591408299275
-scripts/Meteor-syslevel-truncate.sh scripts/../mt_submissions/newstest2019/newstest2019.uedin.6749.de-en "500" "paraphrases/newstest2019/human/deen-1.en.500
-paraphrases/newstest2019/human/deen-2.en.500
-paraphrases/newstest2019/human/deen-3.en.500
-paraphrases/newstest2019/human/deen-4.en.500
-paraphrases/newstest2019/human/deen-5.en.500 scripts/../original-references//newstest2019/newstest2019-deen-ref.en.500" 5
 parmeteor-human-5-syslevel	de-en	newstest2019	uedin.6749		0.31589984559951173
