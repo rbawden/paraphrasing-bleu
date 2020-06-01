@@ -56,7 +56,6 @@ for lpnodash in deen; do
     # For each set of hypotheses, compute the metric score
     for hyp in $hypdir/$testset*$lp; do
 	systemname=`echo $hyp | perl -pe "s/^.+?\/\$testset\.(.+?\.\d+)\.\$lp$/\1/"`
-	echo "$eval_tool $hyp \"$num_lines\" \"$ref\" $n"
 	score=`$eval_tool $hyp "$num_lines" "$ref" $n`
 	echo -ne "$metricname\t$lp\t$testset\t$systemname\t\t$score\n"
     done

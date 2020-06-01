@@ -49,9 +49,9 @@ def write_table_content(testset, metric, level):
     
     # baseline
     if level == 'sys':
-        print(r'\midrule' + '\n' + r'Baseline & \\' + metric + r' & ', end=' ')
+        print(r'\midrule' + '\n' + r'Baseline & ' + '\\' + metric + r' & ', end=' ')
     else:
-        print(r'\midrule' + '\n' + r'Baseline & sentence\\' + metric + r' & ', end=' ')
+        print(r'\midrule' + '\n' + r'Baseline & sentence' + '\\' + metric + r' & ', end=' ')
     system = baseline
     get_all_lang_correlations(mc, baseline, gold, system)
 
