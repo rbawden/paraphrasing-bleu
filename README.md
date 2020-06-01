@@ -66,7 +66,10 @@ The resulting cluster codes are found in `train-dev-test-data.tgz` in the folder
 
 #### Lexical codes (using Laser)
 
-TODO
+1. Get LASER embeddings for data file like (train.en)
+```
+bash scripts/extract_laser_embeds.sh train.en
+```
 
 #### Syntactic codes (Using a Treelstm autoencoder)
 
@@ -82,11 +85,15 @@ cat PARSE_TREE_FILE | python scripts/prune_trees.py --depth DEPTH [--remove_leav
 Cluster the vectorial representation using the following script:
 ```
 python scripts/cluster.py --n_clusters 256 --algorithm kmeans \
-            --model_file MODEL_FILE --in_file IN_FILE --out_file [--predict] [--seed SEED]
+            --model_file MODEL_FILE --in_file IN_FILE --out_file OUT_FILE [--seed SEED]
 ```
 
-The input should be in the following format: TODO
-The model can be used to apply the clusters to new data: TODO
+The input should be in the following format: a ".laser" file (if created by laser as a numpy array), a ".tl" file (as a Torch format data) or as a numpy array saved in a file. 
+The model can be used to apply the clusters to new data with the following script.
+
+```
+python scripts/cluster.py --model_file MODEL_FILE --in_file NEW_FILE --out_file OUT_FILE --seed SEED --predict
+```
 
 ---
 
