@@ -1,0 +1,14 @@
+apted==1.0.3
+click==7.1.2
+joblib==0.14.1
+nltk==3.5
+numpy==1.18.4
+pkg-resources==0.0.0
+portalocker==1.7.0
+regex==2020.5.14
+sacrebleu==1.4.10
+scikit-learn==0.22.2.post1
+scipy==1.4.1
+sklearn==0.0
+tqdm==4.46.0
+typing==3.7.4.1
