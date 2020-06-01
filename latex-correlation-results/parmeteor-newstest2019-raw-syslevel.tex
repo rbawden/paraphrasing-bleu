@@ -1,0 +1,32 @@
+\scalebox{1}{
+\centering\small
+\begin{tabular}{lllllllllll}
+\toprule
+ && de-en & fi-en & gu-en & kk-en & lt-en & ru-en & zh-en & Ave \\
+ Approach & Method & (16) & (12) & (12) & (11) & (11) & (14) & (15\\
+\midrule
+Baseline & \\meteor &  {0.909} & {0.993} & {0.883} & {0.969} & {0.972} & {0.825} & {0.941} & 0.927 \\
+\midrule
+\multirow{3}{*}{\pbox{1.9cm}{Paraphrase baselines (+5)}}
+ & \beam  & \textbf{0.927} & {0.994} & {0.887} & {0.976} & \textbf{0.983} & {0.862} & \textbf{0.949} & 0.940 \\
+ & \random  & \textbf{0.920} & {0.994} & {0.889} & {0.974} & \textbf{0.981} & {0.853} & {0.945} & 0.937 \\
+ & \sampled  & \textbf{0.925} & {0.995} & {0.891} & {0.978} & \textbf{0.982} & {0.864} & {0.945} & 0.940 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Diversity (+1)}}
+ & \laser  & \textbf{0.924} & {0.995} & {0.886} & \textbf{0.975} & \textbf{0.979} & {0.851} & \textbf{0.948} & 0.937 \\
+ & \treelstm  & \textbf{0.923} & {0.994} & {0.889} & {0.974} & \textbf{0.979} & {0.850} & \textbf{0.947} & 0.937 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Diversity (+5)}}
+ & \laser  & \textbf{0.932} & {0.995} & {0.890} & \textbf{0.978} & \textbf{0.983} & {0.860} & \textbf{0.950} & 0.941 \\
+ & \treelstm  & \textbf{0.930} & {0.995} & {0.894} & {0.977} & \textbf{0.983} & {0.864} & \textbf{0.950} & 0.942 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Output-specific (+1)}}
+ & \laser  & {0.920} & {0.994} & {0.891} & {0.975} & \textbf{0.977} & {0.846} & {0.941} & 0.935 \\
+ & \treelstm  & \textbf{0.927} & {0.995} & {0.892} & \textbf{0.978} & \textbf{0.980} & {0.846} & \textbf{0.944} & 0.937 \\
+\midrule
+constraints & 4-grams \\
+\midrule
+& WMT-19 best  & \textbf{0.950} & \textbf{0.995} & \textbf{0.993} & \textbf{0.998} & \textbf{0.989} & \textbf{0.979} & \textbf{0.988} & 0.985 \\
+& & \tiny (\textsc{YiSi-1\_SRL}) & \tiny (\textsc{METEOR}) & \tiny (\textsc{YiSi-0}) & \tiny (\textsc{WMDO}) & \tiny (\textsc{ESIM}) & \tiny (\textsc{YiSi-1}) & \tiny (\textsc{ESIM}) \\
+\bottomrule
+\end{tabular}}

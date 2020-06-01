@@ -1,0 +1,32 @@
+\scalebox{1}{
+\centering\small
+\begin{tabular}{lllllllllll}
+\toprule
+ && de-en & fi-en & gu-en & kk-en & lt-en & ru-en & zh-en & Ave \\
+ Approach & Method & (16) & (12) & (12) & (11) & (11) & (14) & (15\\
+\midrule
+Baseline & bleu &  {0.890} & {0.985} & {0.799} & {0.943} & {0.969} & {0.862} & {0.888} & 0.905 \\
+\midrule
+\multirow{3}{*}{\pbox{1.9cm}{Paraphrase baselines (+5)}}
+ & \beam  & \textbf{0.928} & {0.984} & {0.793} & \textbf{0.961} & \textbf{0.986} & \textbf{0.921} & {0.900} & 0.925 \\
+ & \random  & \textbf{0.916} & {0.986} & {0.805} & \textbf{0.957} & \textbf{0.983} & \textbf{0.908} & {0.898} & 0.922 \\
+ & \sampled  & \textbf{0.937} & {0.984} & {0.798} & {0.966} & \textbf{0.989} & \textbf{0.929} & {0.902} & 0.929 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Diversity (+1)}}
+ & \laser  & \textbf{0.919} & {0.987} & {0.799} & \textbf{0.957} & \textbf{0.981} & \textbf{0.909} & {0.904} & 0.922 \\
+ & \treelstm  & \textbf{0.921} & {0.985} & {0.800} & {0.958} & \textbf{0.982} & \textbf{0.910} & {0.901} & 0.922 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Diversity (+5)}}
+ & \laser  & \textbf{0.934} & {0.985} & {0.795} & \textbf{0.963} & \textbf{0.987} & \textbf{0.918} & {0.896} & 0.925 \\
+ & \treelstm  & \textbf{0.933} & {0.982} & {0.796} & {0.964} & \textbf{0.987} & \textbf{0.918} & {0.898} & 0.925 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Output-specific (+1)}}
+ & \laser  & {0.913} & {0.983} & {0.794} & \textbf{0.960} & \textbf{0.978} & \textbf{0.903} & {0.891} & 0.917 \\
+ & \treelstm  & \textbf{0.921} & {0.983} & {0.792} & \textbf{0.961} & \textbf{0.980} & \textbf{0.903} & {0.894} & 0.919 \\
+\midrule
+constraints & 4-grams  & 0.869 & 0.988 & 0.792 & 0.973 & 0.983 & 0.930 & 0.921 & 0.922\\
+\midrule
+& WMT-19 best  & \textbf{0.950} & \textbf{0.995} & \textbf{0.993} & \textbf{0.998} & \textbf{0.989} & \textbf{0.979} & \textbf{0.988} & 0.985 \\
+& & \tiny (\textsc{YiSi-1\_SRL}) & \tiny (\textsc{METEOR}) & \tiny (\textsc{YiSi-0}) & \tiny (\textsc{WMDO}) & \tiny (\textsc{ESIM}) & \tiny (\textsc{YiSi-1}) & \tiny (\textsc{ESIM}) \\
+\bottomrule
+\end{tabular}}

@@ -1,0 +1,46 @@
+\begin{table}[ht]
+\begin{subtable}{0.75\linewidth}
+\centering\small
+\scalebox{0.95}{
+\begin{tabular}{llrrrrrrrr}
+\toprule
+&&& \multicolumn{3}{c}{System} && \multicolumn{3}{c}{Segment} \\
+Approach & Method & \hphantom{oo} & Ave. & Min & Max & \hphantom{oo} & Ave. & Min & Max \\
+\midrule
+\multirow{3}{*}{\pbox{1.8cm}{Baselines (+5)}}
+& \beam &&  1.40 & {0.16} & {4.37}  &&  9.69 & {2.42} & {32.45} \\
+& \random &&  1.06 & {0.17} & {3.33}  &&  6.61 & {1.19} & {17.65} \\
+& \sampled &&  1.45 & {0.25} & {4.61}  &&  11.09 & {2.44} & {29.78} \\
+\midrule
+\multirow{3}{*}{\pbox{1.8cm}{Diversity (+1)}}
+& \laser &&  1.06 & {0.22} & {3.07}  &&  7.54 & {2.05} & {28.37} \\
+& \treelstm &&  1.03 & {0.10} & {3.02}  &&  6.32 & {1.70} & {20.17} \\
+\midrule
+\multirow{2}{*}{\pbox{1.8cm}{Diversity (+5)}}
+ & \laser &&  1.54 & {0.26} & {4.16}  &&  9.14 & {1.85} & {26.62} \\
+ & \treelstm &&  1.64 & {0.21} & {4.71}  &&  8.86 & {2.75} & {20.71} \\
+\midrule
+\multirow{2}{*}{\pbox{1.8cm}{Output-specific (+1)}}
+& \laser &&  0.84 & {0.05} & {2.46}  &&  5.48 & {0.89} & {14.15} \\
+& \treelstm &&  1.11 & {0.19} & {2.46}  &&  7.27 & {2.47} & {19.22} \\
+\midrule
+Constraints & 4-grams && - & - & - && - & - & - \\
+\midrule
+Human && & - & - & -  & & - & - & -  \\%&& 4.36 & 142.31 \\
+WMT-19 best & Multiple && 9.25 & 1.02 & \textbf{24.28} && 84.84 & \textbf{19.57} & \textbf{92.98} \\
+\bottomrule
+\end{tabular}}
+\caption{\label{tab:correl-all}Average and minimum and maximum gains over all into-English test sets}
+\end{subtable}
+\begin{subtable}{0.19\linewidth}
+\small
+\scalebox{0.95}{
+\begin{tabular}{rr}
+\toprule
+System & Segment \\
+\multicolumn{2}{c}{de--en} \\
+\midrule
+{0.52}   &  {72.13}  \\
+{1.13}   &  {74.24}  \\
+{0.15}   &  {79.16}  \\
+\midrule

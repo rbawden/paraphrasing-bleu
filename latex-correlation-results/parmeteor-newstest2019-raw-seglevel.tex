@@ -1,0 +1,32 @@
+\scalebox{1}{
+\centering\small
+\begin{tabular}{lllllllllll}
+\toprule
+ && de-en & fi-en & gu-en & kk-en & lt-en & ru-en & zh-en & Ave \\
+ Approach & Method & (32000) & (23952) & (12192) & (11000) & (11000) & (28000) & (30000\\
+\midrule
+Baseline & sentence\\meteor &  {0.061} & {0.243} & {0.197} & {0.356} & {0.275} & {0.145} & {0.351} & 0.233 \\
+\midrule
+\multirow{3}{*}{\pbox{1.9cm}{Paraphrase baselines (+5)}}
+ & \beam  & {0.081} & {0.257} & {0.219} & {0.383} & {0.285} & {0.152} & {0.360} & 0.248 \\
+ & \random  & {0.072} & {0.254} & {0.219} & {0.364} & {0.281} & {0.156} & {0.356} & 0.243 \\
+ & \sampled  & {0.080} & {0.262} & {0.228} & {0.375} & {0.292} & {0.160} & {0.360} & 0.251 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Diversity (+1)}}
+ & \laser  & {0.079} & {0.258} & {0.209} & {0.370} & {0.283} & {0.150} & {0.359} & 0.244 \\
+ & \treelstm  & {0.074} & {0.255} & {0.210} & {0.374} & {0.284} & {0.149} & {0.357} & 0.243 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Diversity (+5)}}
+ & \laser  & {0.078} & {0.257} & {0.214} & {0.377} & {0.293} & {0.158} & {0.358} & 0.248 \\
+ & \treelstm  & {0.074} & {0.259} & {0.228} & {0.378} & {0.287} & {0.153} & {0.361} & 0.249 \\
+\midrule
+\multirow{2}{*}{\pbox{1.9cm}{Output-specific (+1)}}
+ & \laser  & {0.070} & {0.253} & {0.215} & {0.359} & {0.282} & {0.154} & {0.357} & 0.241 \\
+ & \treelstm  & {0.073} & {0.261} & {0.213} & {0.377} & {0.289} & {0.149} & {0.360} & 0.246 \\
+\midrule
+constraints & 4-grams \\
+\midrule
+& \tiny WMT-19 best  & \tiny\textbf{0.20} & \tiny\textbf{0.35} & \tiny\textbf{0.31} & \tiny\textbf{0.44} & \tiny\textbf{0.38} & \tiny\textbf{0.22} & \tiny\textbf{0.43} & 0.333 \\
+& & \tiny \tiny \textsc{YiSi-1$_{\text{SRL}}$} & \tiny \textsc{YiSi-1} & \tiny \textsc{YiSi-1} & \tiny \textsc{YiSi-1$_{\text{SRL}}$} & \tiny \textsc{YiSi-1$_{\text{SRL}}$} & \tiny \textsc{YiSi-1$_{\text{SRL}}$} & \tiny \textsc{YiSi-1$_\text{SRL}$} \\
+\bottomrule
+\end{tabular}}

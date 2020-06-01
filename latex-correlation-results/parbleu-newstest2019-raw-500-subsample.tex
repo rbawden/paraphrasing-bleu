@@ -1,0 +1,34 @@
+\centering\small
+\resizebox{\linewidth}{!}{
+\begin{tabular}{llll}
+\toprule
+&& \multicolumn{2}{c}{Correlation} \\
+& Method & System & Segment \\
+\midrule
+Baseline & (sentence)\bleu & {0.895}   &  {0.026}  \\
+\midrule
+\multirow{3}{*}{\pbox{1.3cm}{Baselines (+5)}}
+& \beam &  \textbf{0.934}   &  {0.048}  \\
+& \random &  \textbf{0.926}   &  {0.043}  \\
+& \sampled &  \textbf{0.939}   &  {0.069}  \\
+\midrule
+\multirow{2}{*}{\pbox{1.3cm}{Diversity (+1)}}
+& \laser &  \textbf{0.929}   &  {0.048}  \\
+& \treelstm &  \textbf{0.926}   &  {0.037}  \\
+\midrule
+\multirow{2}{*}{\pbox{1.3cm}{Diversity (+5)}}
+& \laser &  \textbf{0.935}   &  {0.049}  \\
+& \treelstm &  \textbf{0.939}   &  {0.034}  \\
+\midrule
+\multirow{2}{*}{\pbox{1.3cm}{Output-specific (+1)}}
+& \laser &  \textbf{0.926}   &  {0.041}  \\
+& \treelstm &  \textbf{0.934}   &  {0.037}  \\
+\midrule
+\multirow{1}{*}{Constraints}
+& 4-gram & 0.868 & 0.061 \\
+\midrule
+&& Human &  \textbf{0.934}   &  {0.063}  \\
+\bottomrule
+\end{tabular}}
+\caption{Correlations on the 500-sentence subset.}
+\label{tab:subset-seg-level}

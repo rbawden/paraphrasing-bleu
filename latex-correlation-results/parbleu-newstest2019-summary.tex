@@ -1,0 +1,65 @@
+\begin{table}[ht]
+\begin{subtable}{0.75\linewidth}
+\centering\small
+\scalebox{0.95}{
+\begin{tabular}{llrrrrrrrr}
+\toprule
+&&& \multicolumn{3}{c}{System} && \multicolumn{3}{c}{Segment} \\
+Approach & Method & \hphantom{oo} & Ave. & Min & Max & \hphantom{oo} & Ave. & Min & Max \\
+\midrule
+\multirow{3}{*}{\pbox{1.8cm}{Baselines (+5)}}
+& \beam &&  2.18 & {-0.73} & \textbf{6.86}  &&  7.97 & {-0.16} & {13.19} \\
+& \random &&  1.88 & {0.05} & \textbf{5.34}  &&  3.96 & {-0.57} & {6.98} \\
+& \sampled &&  2.69 & {-0.16} & \textbf{7.78}  &&  11.95 & {-1.36} & {33.70} \\
+\midrule
+\multirow{3}{*}{\pbox{1.8cm}{Diversity (+1)}}
+& \laser &&  1.92 & {-0.05} & \textbf{5.52}  &&  6.02 & {-0.95} & {12.32} \\
+& \treelstm &&  1.94 & {-0.05} & \textbf{5.62}  &&  6.50 & {-0.59} & {11.25} \\
+\midrule
+\multirow{2}{*}{\pbox{1.8cm}{Diversity (+5)}}
+ & \laser &&  2.25 & {-0.53} & \textbf{6.55}  &&  6.95 & {-0.73} & {13.07} \\
+ & \treelstm &&  2.26 & {-0.37} & \textbf{6.60}  &&  8.05 & {-1.14} & {18.97} \\
+\midrule
+\multirow{2}{*}{\pbox{1.8cm}{Output-specific (+1)}}
+& \laser &&  1.35 & {-0.70} & \textbf{4.76}  &&  3.97 & {-0.37} & {10.52} \\
+& \treelstm &&  1.56 & {-0.89} & \textbf{4.81}  &&  5.26 & {-1.62} & {12.02} \\
+\midrule
+Constraints & 4-grams  && 1.90 & -2.36 & \textbf{7.89} && 10.75 & -16.58 & 26.75  \\% && -3.02 & 134.62 \\
+\midrule
+Human && & - & - & -  & & - & - & -  \\%&& 4.36 & 142.31 \\
+WMT-19 best & Multiple && 9.25 & 1.02 & \textbf{24.28} && 84.84 & \textbf{19.57} & \textbf{92.98} \\
+\bottomrule
+\end{tabular}}
+\caption{\label{tab:correl-all}Average and minimum and maximum gains over all into-English test sets}
+\end{subtable}
+\begin{subtable}{0.19\linewidth}
+\small
+\scalebox{0.95}{
+\begin{tabular}{rr}
+\toprule
+System & Segment \\
+\multicolumn{2}{c}{de--en} \\
+\midrule
+\textbf{4.43}   &  {82.11}  \\
+\textbf{3.50}   &  {63.86}  \\
+\textbf{4.93}   &  {164.21}  \\
+\midrule
+\textbf{3.77}   &  {85.26}  \\
+\textbf{3.50}   &  {40.35}  \\
+\midrule
+\textbf{4.49}   &  {85.96}  \\
+\textbf{4.89}   &  {29.12}  \\
+\midrule
+\textbf{3.54}   &  {57.89}  \\
+\textbf{4.39}   &  {42.11}  \\
+\midrule
+% Constraints
+-3.02 & 134.62 \\
+\midrule
+\textbf{4.43}   &  {140.35}  \\
+ - & - \\
+\bottomrule
+\end{tabular}}
+\caption{\label{tab:correl-500-subset}500-sample subset}
+\end{subtable}
+\end{table}
