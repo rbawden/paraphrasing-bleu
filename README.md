@@ -15,7 +15,7 @@
      ```
 * Diverse paraphrasing using sentence codes:
     - Laser embeddings: https://github.com/facebookresearch/LASER
-    - Parsing of inputs, using the Berkeley Parser
+    - Parsing of inputs, using the Berkeley Parser 1.1 (Petrov et al., 2006)
     - Treelstm sentence encoder in `treelstm-autoencoder/`
     - Modified beam search in Marian, found in this [modified version](ANON) (link anonymised for submission)
 * Constrained decoding with n-grams:
@@ -28,10 +28,14 @@ Outputs and results (for WMT18/19 into-English test sets):
 * `paraphrases/newstest201{8,9}/` - paraphrased references (human and automatic methods)
 * `paraphrases-parses/newstest201{8,9}/` - paraphrased references (human and automatic methods)
 * `diversity-results/` - raw diversity scores for WMT19
-* `metrics-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
-* `metric-correlations/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
+* `metric-scores/newstest201{8,9}/` - BLEU (and Meteor) scores for baselines and multi-Bleu (or Meteor) metrics using automatic paraphrases
+* `metrics-task/` - gold (human) quality assessment files for WMT18 and WMT19
+* `latex-correlation-results/newstest201{8,9}/` - raw and relative metric correlations for all methods tested - TODO
 
-TODO
+Code and scripts:
+
+* scripts in `scripts/`
+* code either in this directory or linked in this README
 
 ## Instructions for reproducing results: 
 
@@ -220,10 +224,13 @@ python3 scripts/metric_correlation-syslevel.py \
 
 Re-create results tables:
 (Outputs found in `latex-correlation-results/`)
-```
-bash scripts/metric_correlation-create-raw-latex-table.py {bleu,meteor} {seg,sys}level newstest201{89}
-
+``` 
+bash scripts/metric_correlation-create-raw-latex-table.py {bleu,meteor} {seg,sys}level newstest201{89} \
+     > latex-correlation-results/par{bleu,meteor}-newstest2019-summary-{seg,sys}level.tex
 bash scripts/metric_correlation-create-summary-latex-table.py {bleu,meteor} newstest201{89}
+     > latex-correlation-results/par{bleu,meteor}-newstest2019-raw-{seg,sys}level.tex
+python3 scripts/metric_correlation-create-raw-500-latex-table.py \
+     > latex-correlation-results/parbleu-newstest2019-raw-500-subsample.tex
 ```
 
 
