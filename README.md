@@ -120,9 +120,19 @@ bash produce_paraphrase_outputs.sh MODEL NUM_PARAS TESTSET GPUS
 ```
 The paraphrases are output to `paraphrases/MODEL_TYPE/`
 
-Sockeye models:
+#### Sockeye models (for constrained decoding)
 
-TODO? (some light instructions here?)
+Clone the repo:
+
+      git clone https://github.com/edwardjhu/sockeye/tree/trie_constraints
+
+This is the version cited in [Hu et al. (NAACL 2019)](https://www.aclweb.org/anthology/N19-1090),
+which has a more efficient trie implementation for batched constrained decoding.
+
+To train, use the script in `paraphrase-models/constrained/train.sh`.  To translate, use
+`translate.sh` in the same directory. This script takes a JSON-formatted input object containing the
+constraints, as described
+[here](https://awslabs.github.io/sockeye/inference.html#lexical-constraints).
 
 ---
 
