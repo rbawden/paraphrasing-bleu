@@ -99,9 +99,9 @@ def write_table_content(testset, metric, level):
     # constrained results (calculated externally)
     if metric == 'bleu':
         if level =='sys' and testset == 'newstest2019':
-            print(r'constraints & 4-grams  & 0.869 & 0.988 & 0.792 & 0.973 & 0.983 & 0.930 & 0.921 & 0.922\\')
+            print(r'constraints & 4-grams  & 0.922 & 0.983 & 0.809 & 0.963 & 0.989 & 0.924 & 0.921 & 0.930\\')
         elif level == 'seg' and testset == 'newstest2019':
-            print(r'constraints & 4-grams & 0.062 & 0.289 & 0.207 & 0.307 & 0.303 & 0.122 & 0.337 & 0.232 \\')
+            print(r'constraints & 4-grams & 0.090 & 0.242 & 0.161 & 0.271 & 0.323 & 0.122 & 0.314 & 0.218 \\')
         elif level == 'sys' and testset == 'newstest2018':
             print(r'constraints & 4-grams \\')
         elif level == 'seg' and testset == 'newstest2018':

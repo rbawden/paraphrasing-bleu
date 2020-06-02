@@ -106,7 +106,7 @@ def content_large_table(metric, testset):
     # constraint results calculated externally (as require average over different runs)
     print(r'\midrule')
     if metric == 'bleu':
-        print(r'Constraints & 4-grams  && 1.90 & -2.36 & \textbf{7.89} && 10.75 & -16.58 & 26.75  \\% && -3.02 & 134.62 \\')
+        print(r'Constraints & 4-grams  && 2.83 & -0.16 & \textbf{7.15} && 9.98 & -26.35 & 63.17  \\% && -3.02 & 134.62 \\')
     else:
         print(r'Constraints & 4-grams && - & - & - && - & - & - \\')
     print(r'\midrule')
