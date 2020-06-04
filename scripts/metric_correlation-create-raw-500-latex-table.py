@@ -111,7 +111,7 @@ def write_table(metric):
     # Constrained outputs (calculated externally)
     print(r'\midrule')
     print(r'\multirow{1}{*}{Constraints}')
-    print(r'& 4-gram & 0.868 & 0.061 \\') 
+    print(r'& 4-gram & 0.933 & 0.064 \\') 
     
     # Human results
     print('\midrule')

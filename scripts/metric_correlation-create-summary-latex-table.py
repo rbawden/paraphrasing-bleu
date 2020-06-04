@@ -16,6 +16,12 @@ def get_summary_correlations(mc, baseline, gold, system):
     sig_max = sorted_gains[-1][-1]
     sig_min = sorted_gains[0][-1]
 
+    if mc == mcseg:
+        print(system)
+        print([x[0] for x in sorted(relgains, key=lambda x: x[0])])
+        print('\n'.join([str(x[1]) for x in sorted(relgains, key=lambda x: x[0])]))
+        print('')
+    
     sig_max_txt = '' if sig_max == '' else r'\textbf'
     sig_min_txt = '' if sig_min == '' else r'\textbf'
     
@@ -108,7 +114,7 @@ def content_large_table(metric, testset):
     if metric == 'bleu':
         print(r'Constraints & 4-grams  && 2.83 & -0.16 & \textbf{7.15} && 9.98 & -26.35 & 63.17  \\% && -3.02 & 134.62 \\')
     else:
-        print(r'Constraints & 4-grams && - & - & - && - & - & - \\')
+        print(r'Constraints & 4-grams && 1.39 & -17.67 & 9.74 && 6.92 & -23.42 & 48.45\\')
     print(r'\midrule')
     print(r'Human && & - & - & -  & & - & - & -  \\%&& 4.36 & 142.31 \\')
     print(r'WMT-19 best & Multiple && 9.25 & 1.02 & \textbf{24.28} && 84.84 & \textbf{19.57} & \textbf{92.98} \\')

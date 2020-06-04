@@ -107,7 +107,12 @@ def write_table_content(testset, metric, level):
         elif level == 'seg' and testset == 'newstest2018':
             print(r'constraints & 4-grams \\')
     else:
-        print(r'constraints & 4-grams \\')    
+        if level == 'sys' and testset== 'newstest2019':
+            print(r'Constraints & 4-grams & 0.922 & 0.990 & 0.910 & 0.983 & 0.988 & 0.775 & 0.949 & 0.931 \\')
+        elif level =='seg' and testset== 'newstest2019':
+            print(r'Constraints & 4-grams & 0.098 & 0.237 & 0.193 & 0.272 & 0.318 & 0.145 & 0.351 & 0.230 \\')
+        else:
+            print(r'constraints & 4-grams \\')    
     
 
     print(r'\midrule')
