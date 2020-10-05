@@ -17,7 +17,7 @@
     - Laser embeddings: https://github.com/facebookresearch/LASER
     - Parsing of inputs, using the Berkeley Parser 1.1 (Petrov et al., 2006)
     - Treelstm sentence encoder in `treelstm-autoencoder/`
-    - Modified beam search in Marian, found in this [modified version](ANON) (link anonymised for submission)
+    - Modified beam search in Marian, found in this [modified version](https://github.com/rbawden/marian-dev-diverse-beam) 
 * Constrained decoding with n-grams:
     - Sockeye MT toolkit: https://github.com/awslabs/sockeye
 
