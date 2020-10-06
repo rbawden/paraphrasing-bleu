@@ -9,23 +9,27 @@ def get_summary_correlations(mc, baseline, gold, system):
 
     relgains = [(lp, 100 * ((system_results[lp][0]/baseline_results[lp][0]) - 1), system_results[lp][1], sigs[lp]) \
                 for lp in system_results]
-    sorted_gains = sorted(relgains, key=lambda x: x[1])
+
+    absgains = [(lp, system_results[lp][0] - baseline_results[lp][0], system_results[lp][1], sigs[lp]) \
+                                for lp in system_results]
+    
+    sorted_gains = sorted(absgains, key=lambda x: x[1])
     average = sum([x[1] for x in sorted_gains]) / len(sorted_gains)
     maximum = sorted_gains[-1][1]
     minimum = sorted_gains[0][1]
     sig_max = sorted_gains[-1][-1]
     sig_min = sorted_gains[0][-1]
 
-    if mc == mcseg:
-        print(system)
-        print([x[0] for x in sorted(relgains, key=lambda x: x[0])])
-        print('\n'.join([str(x[1]) for x in sorted(relgains, key=lambda x: x[0])]))
-        print('')
+#    if mc == mcseg:
+#        print(system)
+#        print([x[0] for x in sorted(relgains, key=lambda x: x[0])])
+#        print('\n'.join([str(x[1]) for x in sorted(absgains, key=lambda x: x[0])]))
+#        print('')
     
     sig_max_txt = '' if sig_max == '' else r'\textbf'
     sig_min_txt = '' if sig_min == '' else r'\textbf'
     
-    print('%.2f & ' % average + sig_min_txt + '{%.2f} & ' % minimum + sig_max_txt + '{%.2f}' % maximum, end=' ') 
+    print('%.3f & ' % average + sig_min_txt + '{%.3f} & ' % minimum + sig_max_txt + '{%.3f}' % maximum, end=' ') 
 
     
 def get_summary_correlations_small(mc, baseline, gold, system):
@@ -35,10 +39,11 @@ def get_summary_correlations_small(mc, baseline, gold, system):
     assert len(system_results) == 1 and 'de-en' in system_results
 
     rel_gain = 100 * ((system_results['de-en'][0] / baseline_results['de-en'][0]) -1)
+    abs_gain = system_results['de-en'][0] - baseline_results['de-en'][0]
 
     sig_txt = '' if sigs['de-en'] == '' else r'\textbf'
     
-    print(sig_txt + '{%.2f} ' % rel_gain, end=' ')
+    print(sig_txt + '{%.3f} ' % abs_gain, end=' ')
 
 
 def content_large_table(metric, testset):
@@ -114,10 +119,12 @@ def content_large_table(metric, testset):
     if metric == 'bleu':
         print(r'Constraints & 4-grams  && 2.83 & -0.16 & \textbf{7.15} && 9.98 & -26.35 & 63.17  \\% && -3.02 & 134.62 \\')
     else:
-        print(r'Constraints & 4-grams && 1.39 & -17.67 & 9.74 && 6.92 & -23.42 & 48.45\\')
-    print(r'\midrule')
-    print(r'Human && & - & - & -  & & - & - & -  \\%&& 4.36 & 142.31 \\')
-    print(r'WMT-19 best & Multiple && 9.25 & 1.02 & \textbf{24.28} && 84.84 & \textbf{19.57} & \textbf{92.98} \\')
+        print(r'Constraints & 4-grams && 0.004 & -0.050 & 0.027 && -0.002 & 0.043 & -0.084\\')
+    
+    if metric == 'bleu':
+        print(r'\midrule')
+        print(r'Human && & - & - & -  & & - & - & -  \\%&& 4.36 & 142.31 \\')
+        print(r'WMT-19 best & Multiple && 9.25 & 1.02 & \textbf{24.28} && 84.84 & \textbf{19.57} & \textbf{92.98} \\')
 
 
     
