@@ -1,4 +1,19 @@
-# Explicit Representation of the Translation Space: Automatic Paraphrasing for Machine Translation Evaluation
+# A Study in Improving BLEU Reference Coverage with Diverse Automatic Paraphrasing 
+
+## Citation
+
+If you use or reference this work, please cite:
+
+```
+@inproceedings{bawden2020study,
+    title={{A Study in Improving BLEU Reference Coverage with Diverse Automatic Paraphrasing}}, 
+    author={Rachel Bawden and Biao Zhang and Lisa Yankovskaya and Andre Tättar and Matt Post},
+    year={2020},
+    booktitle={Findings of the 2020 Conference on Empirical Methods in Natural Language Processing},
+    notes={To appear}
+}
+```
+The paper can currently be found [here](https://arxiv.org/abs/2004.14989).
 
 ## Requirements and related code
 
