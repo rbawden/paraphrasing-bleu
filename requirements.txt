@@ -8,7 +8,7 @@ portalocker==1.7.0
 regex==2020.5.14
 sacrebleu==1.4.10
 scikit-learn==0.22.2.post1
-scipy==1.4.1
+scipy==1.10.0
 sklearn==0.0
 tqdm==4.46.0
 typing==3.7.4.1
